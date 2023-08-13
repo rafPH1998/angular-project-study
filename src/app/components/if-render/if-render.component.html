@@ -1,0 +1,8 @@
+<p class="text-red-500" *ngIf="canShow">Olá, tudo bem?</p>
+
+<div>
+    <h1 *ngIf="name === 'Rafael'; else nameNotFound">Nome é Rafael</h1>
+    <ng-template #nameNotFound>
+        <p>Nome não encontrado!</p>
+    </ng-template>
+</div>
