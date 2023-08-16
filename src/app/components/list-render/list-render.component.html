@@ -4,6 +4,7 @@
     <li *ngFor="let animal of animals" class="p-5">
         <b>id</b>: {{animal.id}} <b>nome</b>: {{animal.name}} <b>tipo</b>: {{animal.type}} <br>
         <button (click)="showAge(animal)" class="border rounded bg-green-500 text-white p-1 text-xs hover:bg-green-600 font-bold">Exibir idade</button>
+        <button (click)="removeAnimal(animal)" class="border rounded bg-red-500 text-white p-1 text-xs hover:bg-red-600 font-bold">Remover animal</button>
         <hr class="mt-5">
     </li>
 </ul>
