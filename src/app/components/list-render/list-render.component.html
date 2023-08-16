@@ -1,9 +1,9 @@
 <p>Lista de animais</p>
 <ul>
-    <li *ngFor="let animal of animals">
-        ID: {{animal.id}} <br>
-        NOME: {{animal.name}} <br>
-        TIPO: {{animal.type}} <br>
-        <hr>
+    <p class="text-red-500 ml-4 mt-4">{{animalDetails}}</p>
+    <li *ngFor="let animal of animals" class="p-5">
+        <b>id</b>: {{animal.id}} <b>nome</b>: {{animal.name}} <b>tipo</b>: {{animal.type}} <br>
+        <button (click)="showAge(animal)" class="border rounded bg-green-500 text-white p-1 text-xs hover:bg-green-600 font-bold">Exibir idade</button>
+        <hr class="mt-5">
     </li>
 </ul>
